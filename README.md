@@ -1,103 +1,39 @@
-<div align="center">
+# 👋 Maykon Sanches
 
-# ⚡ POLYMARKET WEATHER BOT
+**`Desenvolvedor Python | IA & Sistemas Automatizados`**
 
-**Statistical arbitrage engine for prediction markets**
+Me chamo Maykon Sanches, conhecido como **Kamikaze**, sou de São Paulo e tenho formação em Inteligência Artificial. Trabalho com Python, ferramentas de ML/IA e construção de sistemas automatizados — de bots de trading em tempo real a integrações com ecossistemas financeiros de missão crítica, como o ambiente CliSiTef/SiTef da Fiserv.
 
-`by Maykon Sanches`
-
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)
-![Markets](https://img.shields.io/badge/markets-25%2B-orange?style=flat-square)
-
-</div>
+Gosto de projetos que envolvem dados em tempo real, APIs financeiras e automação ponta a ponta.
 
 ---
 
-## 🎯 O que faz
+### 🤖 Linguagens e Tecnologias
 
-Monitora mercados de temperatura na **Polymarket** e detecta quando a soma dos preços reais de execução de várias faixas cai abaixo de $1.00 → lucro matematicamente garantido, independente do resultado.
+[![Python](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg)](https://www.python.org/) [![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg)](https://developer.mozilla.org/docs/Web/JavaScript) [![Git](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg)](https://git-scm.com/) [![Linux](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg)](https://www.linux.org/) [![PostgreSQL](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg)](https://www.postgresql.org/)
 
-```
-┌─────────────────────────────────────┐
-│   18°C  →  25¢                      │
-│   19°C  →  24¢                      │
-│   20°C  →  16¢                      │
-│   21°C  →  12¢                      │
-│   22°C  →   8¢                      │
-│   23°C  →   5¢                      │
-│   ───────────────                    │
-│   SOMA  →  90¢   compre todas →      │
-│            paga 90¢, recebe $1       │
-└─────────────────────────────────────┘
-```
-
-## ⚙️ Pipeline
-
-```
- Gamma API          CLOB (auth)         WebSocket           Telegram
-┌──────────┐       ┌──────────┐       ┌──────────┐       ┌──────────┐
-│  varre   │──────▶│  orderbook│──────▶│  tempo   │──────▶│  alerta  │
-│ mercados │       │   real    │       │  real    │       │ formatado│
-└──────────┘       └──────────┘       └──────────┘       └──────────┘
-     │                                                          ▲
-     ▼                                                          │
-┌──────────┐       ┌──────────┐       ┌──────────┐              │
-│  NOAA    │       │  Open-   │       │  filtro  │──────────────┘
-│  NBM     │──────▶│  Meteo   │──────▶│  liquidez│
-└──────────┘       └──────────┘       └──────────┘
-```
-
-## 🚀 Destaques técnicos
-
-| | |
-|---|---|
-| 📊 **Preço real de execução** | simula compra nível-a-nível no orderbook — não confia no preço de tela |
-| 🔐 **CLOB autenticado** | leitura de orderbooks em lote via assinatura da carteira Polygon |
-| 🔌 **WebSocket persistente** | heartbeat + reconexão automática, zero polling |
-| ⚡ **Threading paralelo** | 25+ mercados em <60s (antes: ~4min sequencial) |
-| 🌡️ **Multi-modelo climático** | NBM · ECMWF · Météo-France · CMA · GEM — por região |
-| 🛡️ **Filtro anti-ruído** | liquidez real do orderbook, não volume histórico da API |
-
-## 🧰 Stack
-
-`Python` `py-clob-client` `websocket-client` `Telegram Bot API` `NOAA NBM` `Open-Meteo`
-
-## 📁 Estrutura
-
-```
-bot.py                 loop principal
-telegram_alert.py      alertas formatados
-scanner.py             scanner standalone
-nbm.py                 cliente NOAA NBM
-polymarket.py          integração Polymarket
-config.example.py      template de config
-```
-
-## ▶️ Rodando
-
-```bash
-git clone https://github.com/SEU_USUARIO/polymarket-weather-bot.git
-cd polymarket-weather-bot
-pip install -r requirements.txt
-cp config.example.py config.py   # edite com suas credenciais
-python bot.py
-```
-
-> `DRY_RUN=True` por padrão — apenas alerta, nunca executa ordens.
+`Python` · `Pandas` · `NumPy` · `WebSocket` · `REST APIs` · `Trading Systems` · `Machine Learning`
 
 ---
 
-<div align="center">
+### 📊 Estatísticas
 
-### Maykon Sanches
-📍 São Paulo, Brasil · 🎓 IA · 🐍 Python · 📈 Trading Systems
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SEU_USUARIO&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br)](https://github.com/SEU_USUARIO)
 
-`open to AI/ML engineering · quantitative systems · backend roles`
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USUARIO&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=8)](https://github.com/SEU_USUARIO)
 
-</div>
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=SEU_USUARIO&theme=tokyonight)](https://github.com/SEU_USUARIO)
 
 ---
 
-<sub>Projeto educacional sobre arbitragem em mercados de previsão. Não é recomendação de investimento.</sub>
+### 🚀 Projeto em destaque
+
+**[polymarket-weather-bot](https://github.com/SEU_USUARIO/polymarket-weather-bot)** — Bot de arbitragem estatística em mercados de previsão climática, com leitura de orderbook em tempo real e integração multi-modelo meteorológica (NBM/ECMWF/Météo-France).
+
+---
+
+### 📫 Contato
+
+[![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg)](https://www.linkedin.com/in/SEU_LINKEDIN)
+
+📍 São Paulo, Brasil
