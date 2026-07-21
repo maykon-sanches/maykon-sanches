@@ -2,9 +2,11 @@
 <tr>
 <td valign="top" width="60%">
 
+  **Maykon Sanches 
+Embu das Artes - SP.**
+
 # Oi, seja bem vindo(a) 👋
 
-**Me chamo Maykon Sanches, sou de Embu das Artes - SP.**
 
 - 🎓 Formado em Inteligência Artificial
 - ⚡ Venha conhecer meu projeto em destaque abaixo
