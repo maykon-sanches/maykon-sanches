@@ -2,8 +2,8 @@
 <tr>
 <td valign="top" width="60%">
 
-  **Maykon Sanches 
-Embu das Artes - SP.**
+  **Maykon Sanches**
+**Embu das Artes - SP.**
 
 # Oi, seja bem vindo(a) 👋
 
@@ -26,19 +26,6 @@ Embu das Artes - SP.**
 </td>
 </tr>
 </table>
-
----
-
-### 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SEU_USUARIO&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USUARIO&theme=tokyonight&layout=compact&hide_border=true)
-
-</div>
-
----
 
 ## ⚡ Projeto em destaque
 
